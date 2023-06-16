@@ -16,30 +16,35 @@ a {
 ul {
     list-style: none !important;
 }
-/* dùng chung cho các tiêu đề */
-.title {
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 48px;
-}
 
-.sub_title {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 2em;
-    letter-spacing: 1px;
-    color: #f53626;
-}
+/* dùng chung cho các tiêu đề */
+
+
+
 
 .text-blue-primary {
     color: #189A46;
 }
 
-.title,
-.sub_title {
-    text-align: center;
+.title .sub_title {
+    font-size: 18px;
+    font-weight: 400;
     text-transform: uppercase;
+    line-height: 2em;
+    letter-spacing: 1px;
+    color: #f53626;
+    text-align: center;
 }
+
+.title .my__title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    text-transform: capitalize;
+    text-align: center;
+
+}
+
 /* header */
 /* color primary :189a46 */
 /* color text gray :#696969 */
@@ -151,19 +156,20 @@ document.getElementById("myBody").classList.toggle("dark");
 }; */
 
 /* Our Plans */
-.our__plans .row{
-display: flex;
+.our__plans .row {
+    display: flex;
     flex-wrap: nowrap;
     margin: 0;
 }
+
 .our__plans {
     background-color: #f9f8fe;
 
 }
 
-.colum1{
-        background-color: #fff;
-            padding: 3.5em 2.5em;
+.colum1 {
+    background-color: #fff;
+    padding: 3.5em 2.5em;
 }
 
 .our__plans .subtitle {
@@ -184,7 +190,7 @@ display: flex;
 }
 
 p {
-    /* text-align: center; */
+
     text-transform: capitalize;
     margin-bottom: 10px;
     font-size: 25px;
@@ -192,7 +198,7 @@ p {
 
 }
 
-.title h3{
+.title h3 {
     font-size: 40px;
     line-height: 45px;
     margin: 15px 0 20px;
@@ -223,7 +229,8 @@ p {
     border-top-left-radius: 5px;
     background-color: #189A46;
 }
-.colum2  h3{
+
+.colum2 h3 {
     color: white;
 }
 
@@ -241,21 +248,25 @@ p {
     border-radius: 10px;
     color: #189a46;
 }
-.our__plans  h4 {
-        font-size: 18px;
-            line-height: 28px;
-            font-weight: normal;
-            align-self: center;
-            padding-top: 6px;
-            color: #696969;
+
+.our__plans h4 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: normal;
+    align-self: center;
+    padding-top: 6px;
+    color: #696969;
 }
-.our__plans .colum2__text{
+
+.our__plans .colum2__text {
     padding: 2em 2.5em 3.5em;
     background-color: #fff;
 }
-.general{
-        padding: 2em 2.5em 3.5em;
+
+.general {
+    padding: 2em 2.5em 3.5em;
 }
+
 /* TESTIMONIALS */
 .testimonials {
     padding: 40px 0;
@@ -345,6 +356,7 @@ p {
 }
 
 .testimonials .slick-terminal .slick-dots li[role='presentation'] button::before {
+
     color: transparent;
     background-color: #777;
     font-size: 12px;
@@ -355,13 +367,76 @@ p {
 }
 
 .testimonials .slick-terminal .slick-dots li.slick-active button::before,
-.testimonials .slick-terminal .slick-dots li[role='presentation'] button:hover::before {
-    background-color: #189A46;
+.testimonials .slick-terminal .slick-dots li[role='presentation'] button:hover:before {
     width: 100%;
+    background-color: #189A46;
     border-radius: 10px;
-
 }
 
+/*stay updated */
+.stay__updated {
+    padding: 60px 0;
+    background-color: white;
+}
+
+.stay__updated .title h4 {
+font-size: 1.2em;
+    color: #696969;
+    font-weight: normal;
+}
+
+.stay__updated .stay__updated__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.stay__updated .stay__updated__content .title{
+    width: 50%;
+}
+.stay__updated .stay__updated__content .stay__updated__form{
+    width: 50%;
+}
+.stay__updated .stay__updated__content .stay__updated__form{
+    display: flex;
+    justify-content: space-between;
+
+}
+.stay__updated .stay__updated__content .stay__updated__form  form{
+    width: 70%;
+}
+/* .stay__updated .stay__updated__content .stay__updated__form button{
+    width: 35%;
+} */
+
+.stay__updated .stay__updated__content .stay__updated__form form input{
+  width: 100%;
+font-size: 16px;
+    color: #696969;
+    border-radius: 10px;
+    padding: 0px 20px;
+    height: 60px;
+    flex-basis: 70%;
+    background: #fff;
+    height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 0.5px  solid #777;
+    transition: all 0.5s;
+}
+.stay__updated .stay__updated__content .stay__updated__form form input:hover{
+border:0.5px solid #189A46 !important;
+}
+  .stay__updated .stay__updated__content .stay__updated__form button{
+        padding: 12px 35px;
+        font-size: 18px;
+        line-height: 28px;
+        text-transform: capitalize;
+        font-weight: 400;
+        transition: 0.3s ease-in;
+        border-radius: 10px;
+        background-color: #189A46;
+        color: white;}
 /* footer */
 footer {
     background-color: #111;
