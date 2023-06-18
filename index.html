@@ -32,8 +32,8 @@
 
 <body>
   <!-- header -->
-  <header id="site-header" class="main-header fixed-top nav-fixed card">
-    <div class="container">
+  <header id="site-header" class="main-header fixed-top bg-md-dark">
+    <div class="container ">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
           <a class="navbar-brand " href="./index.html">Pooch Care
@@ -41,23 +41,25 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fa-solid fa-bars"></i>
           </button>
+
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-              <li class="nav-item">
+              <li class="nav-item text-md-center">
                 <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item text-md-center">
                 <a class="nav-link" href="#">About</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item text-md-center">
                 <a class="nav-link" href="./services.html">Services</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item text-md-center">
                 <a class="nav-link" href="#">Gallery</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item text-md-center dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   Pages
@@ -67,28 +69,40 @@
                   <li><a class="dropdown-item" href="#">Landing Page</a></li>
                 </ul>
               </li>
-              <li class="nav-item">
+              <li class="nav-item text-md-center">
                 <a class="nav-link" href="#">Contact</a>
               </li>
-            </ul>
-            <!-- data-bs-toggle="modal" là định dạng dùng modal trong bs -->
-            <!-- data-bs-target="#exampleModal" dựa vào id của modal để hiện thị modal có id là exampleModal lên -->
-            <button class=" rounded-circle search" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <i class="fa-solid fa-magnifying-glass  "></i>
 
-            </button>
+              <!-- data-bs-toggle="modal" là định dạng dùng modal trong bs -->
+              <!-- data-bs-target="#exampleModal" dựa vào id của modal để hiện thị modal có id là exampleModal lên -->
+              <li class="nav-item">
+                <button class=" rounded-circle search" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  <i class="fa-solid fa-magnifying-glass  "></i>
+                </button>
+              </li>
+                <li class="nav-item">
+                <button id="mode-dark" class=" button__mode">
+                
+                  <i class="fa-solid fa-sun"></i>
+                  <i class="fa-solid fa-moon"></i>
+                </button>
+
+                </li>
+            </ul>
             <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Launch demo modal
             </button> -->
 
 
           </div>
+
         </div>
       </nav>
+    
     </div>
 
   </header>
-  <main>
+  <main class="header-padding-top">
     <section class="banner">
       <div id="carouselId" class="carousel slide" data-bs-ride="carousel" data-bs-touch="true">
         <ol class="carousel-indicators">
@@ -378,6 +392,118 @@
       </div>
 
     </section>
+
+
+    <!-- Our Plans -->
+    <section class="our__plan py-5 ">
+      <div class="container">
+        <div class="heading">
+          <h6 class="subtitle"> Our Plans</h6>
+          <h3 class="my-title">Affordable Packages</h3>
+        </div>
+        <div class="container-config">
+
+
+          <div class="row  colum1">
+            <!-- col 1 -->
+
+            <div class="col-lg-4 col-md-12 col-sm-12 colum__left text-center">
+
+              <div class="col1__content">
+
+                <div class="col1__item__number">
+                  <h6>Free Package</h6>
+                  <h4>
+                    <label>$</label>0<span>/month</span>
+                  </h4>
+                </div>
+                <div class="col1__item__text">
+                  <div>
+                    <ul class="list">
+                      <li>5 Dog Walk</li>
+                      <li>3 Vet Visit</li>
+                      <li>3 Pet Spa</li>
+                      <li>Free Supports</li>
+                      <li>Customer Support</li>
+                    </ul>
+                  </div>
+                  <div class="button">
+                    <a href="#" class="popup btn btn-style btn-primary">Buy now</a>
+                  </div>
+                </div>
+
+
+
+              </div>
+
+            </div>
+            <!-- col 2 -->
+            <div class="col-lg-4 col-md-12 col-sm-12 colum__left text-center">
+
+              <div class=" colum2">
+                <div class="col1__item__number ">
+                  <h5>SAVE 10%</h5>
+                  <h6>Free Package</h6>
+                  <h4>
+                    <label class="colum2__lable">$</label>39<span>/month</span>
+                  </h4>
+
+                </div>
+                <div class="col1__item__text">
+                  <div>
+                    <ul class="list">
+                      <li>5 Dog Walk</li>
+                      <li>3 Vet Visit</li>
+                      <li>3 Pet Spa</li>
+                      <li>Free Supports</li>
+                      <li>Customer Support</li>
+                    </ul>
+                  </div>
+                  <div class="button my-3">
+                    <a href="#" class="popup btn btn-style btn-primary">Buy now</a>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+            <!-- col 3 -->
+            <div class="col-lg-4 col-md-12 col-sm-12 colum__left text-center">
+              <div class="col1__content">
+                <div class="col1__item__number">
+                  <h6>Free Package</h6>
+                  <h4>
+                    <label>$</label>0<span>/month</span>
+                  </h4>
+                </div>
+                <div class="col1__item__text">
+                  <div>
+                    <ul class="list">
+                      <li>5 Dog Walk</li>
+                      <li>3 Vet Visit</li>
+                      <li>3 Pet Spa</li>
+                      <li>Free Supports</li>
+                      <li>Customer Support</li>
+                    </ul>
+                  </div>
+                  <div class="button">
+                    <a href="#" class="popup btn btn-style btn-primary">Buy now</a>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+
+
+    </section>
+    <!-- description -->
     <section class="description" id="nutrition">
       <div class="container py-md-5 py-3">
         <div class="align-items-center text-center">
@@ -402,270 +528,158 @@
                 </span>
               </a>
               <!-- <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
-                    <iframe src="https://player.vimeo.com/video/101587706" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
-                  </div> -->
+                      <iframe src="https://player.vimeo.com/video/101587706" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+                    </div> -->
             </div>
 
           </div>
         </div>
     </section>
-  </main>
-  <!-- Our Plans -->
-  <section class="our__plan py-5">
-    <div class="container">
-      <div class="heading">
-        <h6 class="subtitle"> Our Plans</h6>
-        <h3 class="my-title">Affordable Packages</h3>
-      </div>
-      <div class="row  colum1">
-        <!-- côt 1 -->
-
-        <div class="col-4 colum__left text-center">
-
-          <div class="col1__content">
-
-            <div class="col1__item__number">
-              <h6>Free Package</h6>
-              <h4>
-                <label>$</label>
-                0
-                <span>/month</span>
-              </h4>
-            </div>
-            <div class="col1__item__text">
-              <div>
-                <ul class="list">
-                  <li>5 Dog Walk</li>
-                  <li>3 Vet Visit</li>
-                  <li>3 Pet Spa</li>
-                  <li>Free Supports</li>
-                  <li>Customer Support</li>
-                </ul>
-              </div>
-              <div class="button">
-                <a href="#" class="popup btn btn-style btn-primary">Buy now</a>
-              </div>
-            </div>
-
-
-
-          </div>
-
-        </div>
-        <!-- cột 2 -->
-        <div class="col-4 colum__left text-center">
-
-          <div class=" colum2">
-            <div class="col1__item__number ">
-              <h5>SAVE 10%</h5>
-              <h6>Free Package</h6>
-              <h4>
-                <label class="colum2__lable">$</label>
-                39
-                <span>/month</span>
-              </h4>
-
-            </div>
-            <div class="col1__item__text">
-              <div>
-                <ul class="list">
-                  <li>5 Dog Walk</li>
-                  <li>3 Vet Visit</li>
-                  <li>3 Pet Spa</li>
-                  <li>Free Supports</li>
-                  <li>Customer Support</li>
-                </ul>
-              </div>
-              <div class="button my-3">
-                <a href="#" class="popup btn btn-style btn-primary">Buy now</a>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-        <!-- cột 3 -->
-        <div class="col-4 colum__left text-center">
-          <div class="col1__content">
-            <div class="col1__item__number">
-              <h6>Free Package</h6>
-              <h4>
-                <label>$</label>
-                0
-                <span>/month</span>
-              </h4>
-            </div>
-            <div class="col1__item__text">
-              <div>
-                <ul class="list">
-                  <li>5 Dog Walk</li>
-                  <li>3 Vet Visit</li>
-                  <li>3 Pet Spa</li>
-                  <li>Free Supports</li>
-                  <li>Customer Support</li>
-                </ul>
-              </div>
-              <div class="button">
-                <a href="#" class="popup btn btn-style btn-primary">Buy now</a>
-              </div>
-            </div>
-
-
-          </div>
-        </div>
-
-
-
-
-      </div>
-
-
-
-  </section>
-  <!-- TESTIMONIALS -->
-  <section class="testimonials">
-    <div class="container">
-      <div class="title">
-        <p class="sub_title">TESTIMONIALS</p>
-        <h2 class="my__title mb-md-5 mb-4">Happy Clients & Feedbacks</h2>
-      </div>
-      <div class="slick-terminal">
-        <div class="testimonials__item">
-          <div>
-            <div class="testimonials__item__content">
-              <i class="fa-solid fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
-                eligendi ea placeat quia delectus suscipit nobis?</p>
-            </div>
-            <div class="testimonials__item__info">
-              <div class="info__image">
-                <img src="./images/f1.jpg" alt="">
-              </div>
-              <div class="testimonials__item__name">
-                <h5>Roy Linderson</h5>
-                <p>Example City</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonials__item">
-          <div>
-            <div class="testimonials__item__content">
-              <i class="fa-solid fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
-                eligendi ea placeat quia delectus suscipit nobis?</p>
-            </div>
-            <div class="testimonials__item__info">
-              <div class="info__image">
-                <img src="./images/f2.jpg" alt="">
-              </div>
-              <div class="testimonials__item__name">
-                <h5>Roy Linderson</h5>
-                <p>Example City</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonials__item">
-          <div>
-            <div class="testimonials__item__content">
-              <i class="fa-solid fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
-                eligendi ea placeat quia delectus suscipit nobis?</p>
-            </div>
-            <div class="testimonials__item__info">
-              <div class="info__image">
-                <img src="./images/f3.jpg" alt="">
-              </div>
-              <div class="testimonials__item__name">
-                <h5>Roy Linderson</h5>
-                <p>Example City</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonials__item">
-          <div>
-            <div class="testimonials__item__content">
-              <i class="fa-solid fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
-                eligendi ea placeat quia delectus suscipit nobis?</p>
-            </div>
-            <div class="testimonials__item__info">
-              <div class="info__image">
-                <img src="./images/f4.jpg" alt="">
-              </div>
-              <div class="testimonials__item__name">
-                <h5>Roy Linderson</h5>
-                <p>Example City</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonials__item">
-          <div>
-            <div class="testimonials__item__content">
-              <i class="fa-solid fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
-                eligendi ea placeat quia delectus suscipit nobis?</p>
-            </div>
-            <div class="testimonials__item__info">
-              <div class="info__image">
-                <img src="./images/f4.jpg" alt="">
-              </div>
-              <div class="testimonials__item__name">
-                <h5>Roy Linderson</h5>
-                <p>Example City</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="testimonials__item">
-          <div>
-            <div class="testimonials__item__content">
-              <i class="fa-solid fa-quote-left"></i>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
-                eligendi ea placeat quia delectus suscipit nobis?</p>
-            </div>
-            <div class="testimonials__item__info">
-              <div class="info__image">
-                <img src="./images/f4.jpg" alt="">
-              </div>
-              <div class="testimonials__item__name">
-                <h5>Roy Linderson</h5>
-                <p>Example City</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--  stay updated -->
-  <section class="stay__updated">
-    <div class="container">
-      <div class="stay__updated__content">
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container-lg">
         <div class="title">
-
-          <h2 class="my__title mb-md-5 mb-4">Stay Updated!</h2>
-          <h4 class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
-            elit
-            consec
-            tetur adipisi elit.
-            Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo officia.</h4>
+          <p class="sub_title">TESTIMONIALS</p>
+          <h2 class="my__title mb-md-5 mb-4">Happy Clients & Feedbacks</h2>
         </div>
-        <div class="stay__updated__form py-5">
-          <form action="">
-            <input type="text" placeholder="Enter your email...">
-          </form>
-          <button class="btn  btn-success px-4 w-25 " data-bs-toggle="modal"
-            data-bs-target="#exampleModal">Subscribe</button>
+        <div class="slick-terminal container-config">
+          <div class="testimonials__item p-md-0">
+            <div>
+              <div class="testimonials__item__content">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
+                  eligendi ea placeat quia delectus suscipit nobis?</p>
+              </div>
+              <div class="testimonials__item__info">
+                <div class="info__image">
+                  <img src="./images/f1.jpg" alt="">
+                </div>
+                <div class="testimonials__item__name">
+                  <h5>Roy Linderson</h5>
+                  <p>Example City</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__item p-md-0">
+            <div>
+              <div class="testimonials__item__content">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
+                  eligendi ea placeat quia delectus suscipit nobis?</p>
+              </div>
+              <div class="testimonials__item__info">
+                <div class="info__image">
+                  <img src="./images/f2.jpg" alt="">
+                </div>
+                <div class="testimonials__item__name">
+                  <h5>Roy Linderson</h5>
+                  <p>Example City</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__item p-md-0">
+            <div>
+              <div class="testimonials__item__content">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
+                  eligendi ea placeat quia delectus suscipit nobis?</p>
+              </div>
+              <div class="testimonials__item__info">
+                <div class="info__image">
+                  <img src="./images/f3.jpg" alt="">
+                </div>
+                <div class="testimonials__item__name">
+                  <h5>Roy Linderson</h5>
+                  <p>Example City</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__item p-md-0">
+            <div>
+              <div class="testimonials__item__content">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
+                  eligendi ea placeat quia delectus suscipit nobis?</p>
+              </div>
+              <div class="testimonials__item__info">
+                <div class="info__image">
+                  <img src="./images/f4.jpg" alt="">
+                </div>
+                <div class="testimonials__item__name">
+                  <h5>Roy Linderson</h5>
+                  <p>Example City</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__item p-md-0">
+            <div>
+              <div class="testimonials__item__content">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
+                  eligendi ea placeat quia delectus suscipit nobis?</p>
+              </div>
+              <div class="testimonials__item__info">
+                <div class="info__image">
+                  <img src="./images/f4.jpg" alt="">
+                </div>
+                <div class="testimonials__item__name">
+                  <h5>Roy Linderson</h5>
+                  <p>Example City</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="testimonials__item p-md-0">
+            <div>
+              <div class="testimonials__item__content">
+                <i class="fa-solid fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid illum nesciunt distinctio repellat
+                  eligendi ea placeat quia delectus suscipit nobis?</p>
+              </div>
+              <div class="testimonials__item__info">
+                <div class="info__image">
+                  <img src="./images/f4.jpg" alt="">
+                </div>
+                <div class="testimonials__item__name">
+                  <h5>Roy Linderson</h5>
+                  <p>Example City</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!--  stay updated -->
+    <section class="stay__updated">
+      <div class="container-lg">
+        <div class="stay__updated__content">
+          <div class="title">
+
+            <h2 class="my__title mb-md-5 mb-4">Stay Updated!</h2>
+            <h4 class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet
+              elit
+              consec
+              tetur adipisi elit.
+              Lorem ipsum dolor sit amet elit consec tetur adipisi elit. Iure voluptatibus explicabo officia.</h4>
+          </div>
+          <div class="stay__updated__form py-5">
+            <form class="d-flex">
+              <input type="text" placeholder="Enter your email..." required>
+              <button type="submit" class="btn  btn-success px-4 ms-3 ">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
   <!-- footer -->
   <footer>
     <div class="container py-lg-3">
@@ -757,7 +771,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <form action="https://wp.w3layouts.com/poochcare/" method="get" class="d-sm-flex search__modal">
+          <form method="get" class="d-sm-flex search__modal">
 
             <input type="search" name="s" placeholder="Search.." required="required" autofocus="">
 
@@ -774,27 +788,25 @@
   </div>
 
 
-  <!-- slick -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
-    integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
+    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- slick  -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
     integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
-
+    // terminal
     $('.slick-terminal').slick({
       infinite: true,
       arrows: false,
       speed: 300,
       dots: true,
-      //  centerPadding: '20px',
       infinite: true,
-      slidesToShow: 2,
-      slidesToScroll: 2,
       mobileFirst: true,//add this one
       responsive: [
         {
@@ -816,10 +828,10 @@
     });
   </script>
 
+
+
   <!-- countUp -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-    integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
   <script src="./js/countup/jquery.countup.js"></script>
   <script>$('.counter').countUp();</script>
 
@@ -837,6 +849,31 @@
       },
       allowPageScroll: "vertical"
     });
+  </script>
+  <script>
+    var body = $('body')
+    body.removeClass('dark')
+    $('.fa-moon').addClass('d-none')
+
+    $('#mode-dark').click(function () {
+      //  <i class="fa-solid fa-sun"></i>
+      // <i class="fa-solid fa-moon"></i>
+
+      if (body.hasClass('dark')) {// dark
+        $('.fa-sun').addClass('d-block').removeClass('d-none')
+        $('.fa-moon').addClass('d-none').removeClass('d-block')
+
+        //move to light desktop
+        body.removeClass('dark')
+      } else {
+        //move to dark desktop
+
+        $('.fa-sun').addClass('d-none').removeClass('d-block')
+        $('.fa-moon').addClass('d-block').removeClass('d-none')
+        body.addClass('dark')
+
+      }
+    })
   </script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
