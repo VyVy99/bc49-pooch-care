@@ -851,29 +851,22 @@
     });
   </script>
   <script>
-    var body = $('body')
-    body.removeClass('dark')
-    $('.fa-moon').addClass('d-none')
+      const body = $('body');
+      const sunIcon = $('.fa-sun');
+      const moonIcon = $('.fa-moon');
+      const darkModeBtn = $('#mode-dark');
 
-    $('#mode-dark').click(function () {
-      //  <i class="fa-solid fa-sun"></i>
-      // <i class="fa-solid fa-moon"></i>
-
-      if (body.hasClass('dark')) {// dark
-        $('.fa-sun').addClass('d-block').removeClass('d-none')
-        $('.fa-moon').addClass('d-none').removeClass('d-block')
-
-        //move to light desktop
-        body.removeClass('dark')
-      } else {
-        //move to dark desktop
-
-        $('.fa-sun').addClass('d-none').removeClass('d-block')
-        $('.fa-moon').addClass('d-block').removeClass('d-none')
-        body.addClass('dark')
-
-      }
-    })
+      darkModeBtn.click(function () {
+        if (body.hasClass('dark')) {
+          body.removeClass('dark');
+          sunIcon.addClass('d-block').removeClass('d-none');
+          moonIcon.addClass('d-none').removeClass('d-block');
+        } else {
+          body.addClass('dark');
+          sunIcon.addClass('d-none').removeClass('d-block');
+          moonIcon.addClass('d-block').removeClass('d-none');
+        }
+      });
   </script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
