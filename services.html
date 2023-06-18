@@ -26,18 +26,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
         integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-       
+    <link rel="stylesheet" href="./services.html">
     <!-- css  -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <!-- header -->
-    <header class="card">
+    <header id="site-header" class="main-header fixed-top nav-fixed card">
         <div class="container">
             <nav class="navbar navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand " href="#">Pooch Care
+                    <a class="navbar-brand " href="https://wp.w3layouts.com/poochcare/">Pooch Care
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -47,13 +47,14 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link active" aria-current="page"
+                                    href="https://wp.w3layouts.com/poochcare/">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Services</a>
+                                <a class="nav-link" href="./services.html">Services</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Gallery</a>
@@ -72,22 +73,24 @@
                                 <a class="nav-link" href="#">Contact</a>
                             </li>
                         </ul>
-                        <button class=" rounded-circle search">
+                        <!-- data-bs-toggle="modal" là định dạng dùng modal trong bs -->
+                        <!-- data-bs-target="#exampleModal" dựa vào id của modal để hiện thị modal có id là exampleModal lên -->
+                        <button class=" rounded-circle search" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <i class="fa-solid fa-magnifying-glass  "></i>
 
                         </button>
-                        <!-- light and dark mode -->
-                        <!-- <div class="btn" id="switchButton" title="Click to switch theme">
-              <i class="fa-solid fa-sun"></i>
-              <i class="fa-solid fa-moon"></i>
-            </div> -->
+                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button> -->
+
+
                     </div>
                 </div>
             </nav>
         </div>
 
     </header>
- 
+
 
     <!-- footer -->
     <footer>
@@ -97,9 +100,7 @@
                     <h6 class="footer__title">Contact information</h6>
                     <ul>
                         <li>
-                            <p>
-                                <strong>Address</strong>: #135 block, Barnard St. Brooklyn, London 10036, UK
-                            </p>
+                            <p><strong></strong>: #135 block, Barnard St. Brooklyn, London 10036, UK</p>
                         </li>
                         <li>
                             <p><strong>Phone</strong> : <a href="tel:+(12)234-11-24">+(12)234-11-24</a></p>
@@ -137,28 +138,26 @@
                         <div class="col-sm-4 col-6 mt-5">
                             <h6 class="footer__title">Archives</h6>
                             <ul>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="#">Blog Posts</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="#pricing">Pricing</a></li>
+                                <li><a href="#URL">December 2020</a></li>
+
                             </ul>
                         </div>
                         <div class="col-sm-4 col-6 mt-5">
                             <h6 class="footer__title">Categories</h6>
                             <ul>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="#signup">Create account</a></li>
-                                <li><a href="#learn">Care Center</a></li>
-                                <li><a href="#feedback">Site Feedack</a></li>
+                                <li><a href="#URL">Animals</a></li>
+                                <li><a href="#URL">Pets</a></li>
+                                <li><a href="#URL">Pets care</a></li>
+                                <li><a href="#URL">Uncategorized</a></li>
                             </ul>
                         </div>
                         <div class="col-sm-4 mt-5">
                             <h6 class="footer__title">Meta</h6>
                             <ul>
-                                <li><a href="#URL">All Dogs</a></li>
-                                <li><a href="#URL">Care Advices</a></li>
-                                <li><a href="#URL">Care Support</a></li>
-                                <li><a href="#URL">Veterinary Help</a></li>
+                                <li><a href="#URL">Login</a></li>
+                                <li><a href="#URL">Entries food</a></li>
+                                <li><a href="#URL">Comments feed</a></li>
+                                <li><a href="#URL">Wordress.org</a></li>
                             </ul>
                         </div>
                     </div>
@@ -172,6 +171,61 @@
 
         </div>
     </footer>
+    <!-- modal signup -->
+
+    <div class="modal modal__search fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="https://wp.w3layouts.com/poochcare/" method="get" class="d-sm-flex search__modal">
+
+                        <input type="search" name="s" placeholder="Search.." required="required" autofocus="">
+
+                        <button type="submit">Search</button>
+                        <!-- <a class="close" href="#url">×</a> -->
+                    </form>
+                </div>
+                <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- modal sign up 2 -->
+    <div class="modal modal__search fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!-- <form action="https://wp.w3layouts.com/poochcare/" method="get" class="d-sm-flex search__modal">
+  
+            <input type="search" name="s" placeholder="Search.." required="required" autofocus=""> -->
+
+                    <button type="Subscribe">Subscribe
+
+                    </button>
+                    <!-- <a class="close" href="#url">×</a> -->
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     <!-- slick -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
