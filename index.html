@@ -72,15 +72,17 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <button class=" rounded-circle search">
+            <!-- data-bs-toggle="modal" là định dạng dùng modal trong bs -->
+            <!-- data-bs-target="#exampleModal" dựa vào id của modal để hiện thị modal có id là exampleModal lên -->
+            <button class=" rounded-circle search" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <i class="fa-solid fa-magnifying-glass  "></i>
 
             </button>
-            <!-- light and dark mode -->
-            <!-- <div class="btn" id="switchButton" title="Click to switch theme">
-              <i class="fa-solid fa-sun"></i>
-              <i class="fa-solid fa-moon"></i>
-            </div> -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button> -->
+
+
           </div>
         </div>
       </nav>
@@ -100,30 +102,30 @@
         <div class="col-4 colum__left text-center">
 
           <div class="col1__content">
-           
-              <div class="col1__item__number">
-                <h6>Free Package</h6>
-                <h4>
-                  <label>$</label>
-                  0
-                  <span>/month</span>
-                </h4>
+
+            <div class="col1__item__number">
+              <h6>Free Package</h6>
+              <h4>
+                <label>$</label>
+                0
+                <span>/month</span>
+              </h4>
+            </div>
+            <div class="col1__item__text">
+              <div>
+                <ul class="list">
+                  <li>5 Dog Walk</li>
+                  <li>3 Vet Visit</li>
+                  <li>3 Pet Spa</li>
+                  <li>Free Supports</li>
+                  <li>Customer Support</li>
+                </ul>
               </div>
-              <div class="col1__item__text">
-                <div>
-                  <ul class="list">
-                    <li>5 Dog Walk</li>
-                    <li>3 Vet Visit</li>
-                    <li>3 Pet Spa</li>
-                    <li>Free Supports</li>
-                    <li>Customer Support</li>
-                  </ul>
-                </div>
-                <div class="button">
-                  <a href="#" class="popup btn btn-style btn-primary">Buy now</a>
-                </div>
+              <div class="button">
+                <a href="#" class="popup btn btn-style btn-primary">Buy now</a>
               </div>
-        
+            </div>
+
 
 
           </div>
@@ -336,7 +338,8 @@
           <form action="">
             <input type="text" placeholder="Enter your email...">
           </form>
-          <button class="btn  btn-success px-4 w-25 ">Subscribe</button>
+          <button class="btn  btn-success px-4 w-25 " data-bs-toggle="modal"
+            data-bs-target="#exampleModal">Subscribe</button>
         </div>
       </div>
     </div>
@@ -422,6 +425,61 @@
 
     </div>
   </footer>
+  <!-- modal signup -->
+
+  <div class="modal modal__search fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form action="https://wp.w3layouts.com/poochcare/" method="get" class="d-sm-flex search__modal">
+
+            <input type="search" name="s" placeholder="Search.." required="required" autofocus="">
+
+            <button type="submit">Search</button>
+            <!-- <a class="close" href="#url">×</a> -->
+          </form>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
+  <!-- modal sign up 2 -->
+  <div class="modal modal__search fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="modal-body">
+          <!-- <form action="https://wp.w3layouts.com/poochcare/" method="get" class="d-sm-flex search__modal">
+  
+            <input type="search" name="s" placeholder="Search.." required="required" autofocus=""> -->
+
+          <button type="Subscribe">Subscribe
+
+          </button>
+          <!-- <a class="close" href="#url">×</a> -->
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
   <!-- slick -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
     integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="

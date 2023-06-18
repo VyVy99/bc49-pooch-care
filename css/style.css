@@ -56,7 +56,7 @@ header .navbar-brand {
     font-size: 34px;
     font-weight: 600;
     text-transform: capitalize;
-    color:#189A46;
+    color: #189A46;
 }
 
 header .navbar-nav .nav-link {
@@ -134,19 +134,7 @@ a {
 }
 
 /* Dark Theme*/
-.dark#myBody {
-    background-color: black;
-}
 
-.dark #switchButton {
-    background-color: black;
-    border: 1px solid white;
-}
-
-.dark #switchButton .fa-sun {
-    display: block;
-    color: white;
-}
 
 /* .dark #switchButton .fa-moon {
     display: none;
@@ -571,4 +559,52 @@ footer .footer__title {
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 25px;
+}
+
+
+/* modal  */
+.modal__search form.search__modal input[type="search"] {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+    height: 55px;
+    padding: 15px 20px 12px;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    border-bottom-left-radius: 6px;
+    border-top-left-radius: 6px;
+    border-right: none;
+    outline: none;
+}
+
+.modal__search form.search__modal button {
+    font-size: 17px;
+    line-height: 28px;
+    text-align: center;
+    color: #F5F9FC;
+    font-weight: 500;
+    border: none;
+    background: #189A46;
+    padding: 0 25px;
+    border-left: none;
+    border-radius: initial;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.modal__search .modal-header {
+    border-bottom: none;
+}
+
+.modal__search .modal-content {
+    background-color: transparent;
+    border: none;
+}
+
+.modal__search .btn-close {
+    color: white;
+    background-color: black;
+    line-height: 17px;
 }
