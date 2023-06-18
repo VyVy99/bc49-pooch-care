@@ -856,6 +856,8 @@
       const moonIcon = $('.fa-moon');
       const darkModeBtn = $('#mode-dark');
 
+      moonIcon.addClass('d-none')
+
       darkModeBtn.click(function () {
         if (body.hasClass('dark')) {
           body.removeClass('dark');
