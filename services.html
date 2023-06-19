@@ -32,77 +32,77 @@
 
 <body id="service">
     <!-- header -->
-    <header id="site-header" class="main-header fixed-top bg-md-dark">
-        <div class="container ">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand " href="./index.html">Pooch Care
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars"></i>
-                    </button>
+<header id="site-header" class="main-header fixed-top bg-md-dark">
+    <div class="container ">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand " href="./index.html">Pooch Care
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
 
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
-                            <li class="nav-item text-md-center">
-                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-                            </li>
-                            <li class="nav-item text-md-center">
-                                <a class="nav-link" href="#">About</a>
-                            </li>
-                            <li class="nav-item text-md-center">
-                                <a class="nav-link" href="./services.html">Services</a>
-                            </li>
-                            <li class="nav-item text-md-center">
-                                <a class="nav-link" href="#">Gallery</a>
-                            </li>
-                            <li class="nav-item text-md-center dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    Pages
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Blog Posts</a></li>
-                                    <li><a class="dropdown-item" href="#">Landing Page</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item text-md-center">
-                                <a class="nav-link" href="#">Contact</a>
-                            </li>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item text-md-center">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item text-md-center">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item text-md-center">
+                            <a class="nav-link" href="./services.html">Services</a>
+                        </li>
+                        <li class="nav-item text-md-center">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item text-md-center dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Blog Posts</a></li>
+                                <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item text-md-center">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
 
-                            <!-- data-bs-toggle="modal" là định dạng dùng modal trong bs -->
-                            <!-- data-bs-target="#exampleModal" dựa vào id của modal để hiện thị modal có id là exampleModal lên -->
-                            <li class="nav-item">
-                                <button class=" rounded-circle search" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">
-                                    <i class="fa-solid fa-magnifying-glass  "></i>
-                                </button>
-                            </li>
-                            <li class="nav-item">
-                                <button id="mode-dark" class=" button__mode">
+                        <!-- data-bs-toggle="modal" là định dạng dùng modal trong bs -->
+                        <!-- data-bs-target="#exampleModal" dựa vào id của modal để hiện thị modal có id là exampleModal lên -->
+                        <li class="nav-item">
+                            <button class=" rounded-circle search" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                <i class="fa-solid fa-magnifying-glass  "></i>
+                            </button>
+                        </li>
+                        <li class="nav-item">
+                            <button id="mode-dark" class=" button__mode">
 
-                                    <i class="fa-solid fa-sun"></i>
-                                    <i class="fa-solid fa-moon"></i>
-                                </button>
+                                <i class="fa-solid fa-sun"></i>
+                                <i class="fa-solid fa-moon"></i>
+                            </button>
 
-                            </li>
-                        </ul>
-                        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        </li>
+                    </ul>
+                    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Launch demo modal
             </button> -->
 
 
-                    </div>
-
                 </div>
-            </nav>
 
-        </div>
+            </div>
+        </nav>
 
-    </header>
+    </div>
+
+</header>
     <main class="header-padding-top">
         <section id="service_banner">
             <div class="breadcrumb-bg breadcrumb-bg-about py-sm-5 py-4">
@@ -292,31 +292,28 @@
             allowPageScroll: "vertical"
         });
     </script>
+    <!-- // -->
     <script>
-        var body = $('body')
-        body.removeClass('dark')
-        $('.fa-moon').addClass('d-none')
+        const body = $('body');
+        const sunIcon = $('.fa-sun');
+        const moonIcon = $('.fa-moon');
+        const darkModeBtn = $('#mode-dark');
 
-        $('#mode-dark').click(function () {
-            //  <i class="fa-solid fa-sun"></i>
-            // <i class="fa-solid fa-moon"></i>
+        moonIcon.addClass('d-none')
 
-            if (body.hasClass('dark')) {// dark
-                $('.fa-sun').addClass('d-block').removeClass('d-none')
-                $('.fa-moon').addClass('d-none').removeClass('d-block')
-
-                //move to light desktop
-                body.removeClass('dark')
+        darkModeBtn.click(function () {
+            if (body.hasClass('dark')) {
+                body.removeClass('dark');
+                sunIcon.addClass('d-block').removeClass('d-none');
+                moonIcon.addClass('d-none').removeClass('d-block');
             } else {
-                //move to dark desktop
-
-                $('.fa-sun').addClass('d-none').removeClass('d-block')
-                $('.fa-moon').addClass('d-block').removeClass('d-none')
-                body.addClass('dark')
-
+                body.addClass('dark');
+                sunIcon.addClass('d-none').removeClass('d-block');
+                moonIcon.addClass('d-block').removeClass('d-none');
             }
-        })
+        });
     </script>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
