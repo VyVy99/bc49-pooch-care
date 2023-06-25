@@ -65,6 +65,14 @@ input {
 }
 
 @media screen and (max-width:922px) {
+    #site-header {
+            background: #fff;
+            height: auto;
+        }
+    
+        .dark #site-header {
+            background-color: #404040;
+        }
     .container-config {
         margin-left: 0px;
         margin-right: 0px;
