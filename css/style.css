@@ -104,12 +104,6 @@ input {
         margin: 0 auto;
 
     }
-
-    .col-lg-6 {
-        width: 100%;
-        margin: 0 auto;
-    }
-
 }
 
 body.dark {
@@ -1181,6 +1175,10 @@ footer .footer__title {
     line-height: 2em;
     letter-spacing: 1px;
     color: #f53626;
+}
+
+.service_part {
+    width: 100%;
 }
 
 @keyframes ripple {
