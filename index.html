@@ -32,7 +32,7 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body >
   <!-- Video Overlay -->
   <div class="mfp-bg my-mfp-zoom-in mfp-hide"></div>
   <div class="mfp-wrap mfp-close-btn-in mfp-auto-cursor my-mfp-zoom-in mfp-hide" tabindex="-1"
@@ -101,7 +101,7 @@
                 <button id="mode-dark" class=" button__mode">
 
                   <i class="fa-solid fa-sun"></i>
-                  <i class="fa-solid fa-moon"></i>
+                  <i class="fa-solid  d-none"></i>
                 </button>
 
               </li>
@@ -871,8 +871,6 @@
     const sunIcon = $('.fa-sun');
     const moonIcon = $('.fa-moon');
     const darkModeBtn = $('#mode-dark');
-
-    moonIcon.addClass('d-none')
 
     darkModeBtn.click(function () {
       if (body.hasClass('dark')) {
