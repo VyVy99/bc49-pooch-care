@@ -160,6 +160,7 @@ header .navbar-brand {
 }
 
 
+
 header .navbar-nav>.nav-item>.nav-link::before {
     content: "";
     width: 0;
@@ -1126,7 +1127,21 @@ footer .footer__title {
 }
 
 
+#service_banner h2 {
+    color: white;
+}
 
+#service_banner .title {
+    font-size: 50px;
+    font-weight: 600;
+}
+ ul {
+    font-size: 1.2em;
+}
+
+#service_banner ul a:active,a,a:hover{
+    color: #189a46;
+}
 
 
 @keyframes ripple {
