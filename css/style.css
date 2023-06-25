@@ -159,11 +159,6 @@ header .navbar-brand {
     color: #189a46;
 }
 
-header .navbar-nav .nav-link:hover,
-header .navbar-nav .nav-link.active,
-header .navbar-brand {
-    color: #189a46;
-}
 
 header .navbar-nav>.nav-item>.nav-link::before {
     content: "";
@@ -1131,22 +1126,7 @@ footer .footer__title {
 }
 
 
-#service h2 {
-    color: white;
-}
 
-#service .title {
-    font-size: 50px;
-    font-weight: 600;
-}
-
-#service ul {
-    font-size: 1.2em;
-}
-
-#service ul a:active,a,a:hover{
-    color: #189a46;
-}
 
 
 @keyframes ripple {
