@@ -1098,8 +1098,8 @@ footer .footer__title {
 
     .mfp-close-btn-in .mfp-close {
         color: rgb(255, 255, 255);
-        right: 380px;
-        top: 70px;
+        top: 10%;
+        left: calc(50vw + 360px);
         font-size: 40px;
     }
 
