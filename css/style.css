@@ -19,6 +19,9 @@ input {
     outline: none;
 }
 
+.dark p {
+    color: #afafaf;
+}
 
 /* dùng chung cho các tiêu đề */
 
@@ -77,6 +80,10 @@ input {
         height: auto;
     }
 
+    .history__content {
+        width: 100% !important;
+    }
+
     .dark #site-header {
         background-color: #404040;
     }
@@ -101,6 +108,23 @@ input {
     .colum__left {
         margin-top: 15px;
     }
+
+    .content .description .title {
+        text-align: left;
+    }
+
+    .content-right {
+        margin-top: 50px;
+    }
+
+    .content-right-info {
+        text-align: center;
+    }
+
+    .teams .column h3 a {
+        font-size: 18px;
+        line-height: 22px;
+    }
 }
 
 @media screen and (min-width:922px) {
@@ -122,8 +146,16 @@ input {
     }
 }
 
+@media screen and (max-width:576px) {
+    .portfolio__list {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+}
+
+
 body.dark {
-    background-color: #404040;
+    background-color: black;
     color: white;
 }
 
@@ -348,13 +380,14 @@ header.main-header {
     padding: 0px 20px
 }
 
-.description h6 {
+.description .sub-title {
+    text-transform: uppercase;
     color: #f53626;
     font-weight: 400;
     font-size: 18px;
 }
 
-.description h3 {
+.description .title {
     text-align: center;
     display: block;
     font-size: 40px;
@@ -1116,7 +1149,8 @@ footer .footer__title {
     font-size: 40px;
 }
 
-#service_banner {
+#service_banner,
+.breadcrumb-banner {
     background-image: url(./../images/banner4.jpg);
     background-blend-mode: darken;
     background-repeat: no-repeat;
@@ -1131,7 +1165,8 @@ footer .footer__title {
     text-align: center;
 }
 
-#service_banner::before {
+#service_banner::before,
+.breadcrumb-banner::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1144,11 +1179,13 @@ footer .footer__title {
 }
 
 
-#service_banner h2 {
+#service_banner h2,
+.breadcrumb-banner h2 {
     color: white;
 }
 
-#service_banner .title {
+#service_banner .title,
+.breadcrumb-banner .title {
     font-size: 50px;
     font-weight: 600;
 }
@@ -1158,6 +1195,7 @@ ul {
 }
 
 #service_banner ul a:active,
+.breadcrumb-banner,
 a,
 a:hover {
     color: #189a46;
@@ -1203,6 +1241,157 @@ a:hover {
     width: 100%;
 }
 
+.dark .about-us p,
+.dark .about-us a {
+    color: #afafaf;
+}
+
+.history {
+    background: url(../images/banner2.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    align-items: center;
+    margin-left: 0 auto;
+}
+
+.history::before {
+    content: "";
+    background-color: rgba(0, 4, 8, 0.69);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.history {
+    color: #fff;
+}
+
+.history .description .title {
+    text-align: left;
+}
+
+.history .description p {
+    color: #fff;
+    opacity: .7;
+}
+
+.content-left img {
+    border-radius: 10px;
+}
+
+.content-icon {
+    color: #189A46;
+    text-align: right;
+}
+
+.content-right-info h6 a {
+    color: black;
+    text-align: left;
+    margin-bottom: 0;
+    color: var(--heading-color);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.dark .content-right-info h6 a {
+    color: white;
+}
+
+.teams {
+    background-color: rgba(147, 107, 232, 0.05);
+    ;
+}
+
+.teams .column img {
+    border-radius: 10px;
+}
+
+.teams .column h3 a {
+    color: black;
+}
+
+.dark .teams .column h3 a {
+    color: white;
+}
+
+.teams .column .social a {
+    display: inline-block;
+    margin-right: 6px;
+    width: 30px;
+    height: 30px;
+    border-radius: 4px;
+    line-height: 30px;
+    text-align: center;
+    background: rgba(147, 107, 232, 0.05);
+    color: #189A46;
+
+}
+
+.portfolio__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.portfolio-item {
+    position: relative;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.portfolio-item img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.portfolio-item:hover::before {
+    animation: shine .75s;
+}
+
+.portfolio-item::before {
+    position: absolute;
+    top: 0;
+    left: -200%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    transform: skewX(-25deg);
+}
+
+#back-to-top {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #189A46;
+    color: white;
+    position: sticky;
+    bottom: 10%;
+    right: 3%;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 99999;
+    text-align: center;
+    line-height: 50px;
+}
+
+#back-to-top a {
+    color: white;
+}
+
+#back-to-top a i {
+    padding: 5px;
+    font-size: 40px;
+}
+
 @keyframes ripple {
     0% {
         box-shadow: 0 0 0 .5rem rgba(24, 154, 70, 0.2),
@@ -1214,5 +1403,11 @@ a:hover {
         box-shadow: 0 0 0 0.7rem rgba(24, 154, 70, 0.2),
             0 0 0 2rem rgba(24, 154, 70, 0.2),
             0 0 0 3rem rgba(24, 154, 70, 0);
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 100%;
     }
 }
