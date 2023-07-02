@@ -48,16 +48,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                             <li class="nav-item text-md-center">
-                                <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                                <a class="nav-link " aria-current="page" href="./index.html">Home</a>
                             </li>
                             <li class="nav-item text-md-center">
-                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="./about.html">About</a>
                             </li>
                             <li class="nav-item text-md-center">
                                 <a class="nav-link active" href="./services.html">Services</a>
                             </li>
                             <li class="nav-item text-md-center">
-                                <a class="nav-link" href="#">Gallery</a>
+                                <a class="nav-link" href="./gallery.html">Gallery</a>
                             </li>
                             <li class="nav-item text-md-center dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -65,12 +65,14 @@
                                     Pages
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Blog Posts</a></li>
-                                    <li><a class="dropdown-item" href="#">Landing Page</a></li>
+                                    <li><a class="dropdown-item" href="./404.html">Blog Posts</a></li>
+                                    <li> <a class="dropdown-item" href="./404.html">Blog simple</a></li>
+                                    <li> <a class="dropdown-item" href="./landding-page.html">Landing Page</a></li>
+
                                 </ul>
                             </li>
                             <li class="nav-item text-md-center">
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link" href="./contact.html">Contact</a>
                             </li>
 
                             <!-- data-bs-toggle="modal" là định dạng dùng modal trong bs -->
@@ -91,8 +93,8 @@
                             </li>
                         </ul>
                         <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Launch demo modal
-            </button> -->
+                  Launch demo modal
+                </button> -->
 
 
                     </div>
@@ -318,6 +320,11 @@
         </div>
     </div>
 
+    <div id="back-to-top">
+        <a href="#site-header">
+            <i class="fa fa-caret-up"></i>
+        </a>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
@@ -359,7 +366,21 @@
         });
     </script>
 
+    <script>
+        window.addEventListener('scroll', function () {
+            var backToTopButton = document.querySelector('#back-to-top');
+            if (window.pageYOffset > 300) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        });
 
+        document.querySelector('#back-to-top').addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+    </script>
 
     <!-- countUp -->
 
