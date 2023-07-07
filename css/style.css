@@ -3,6 +3,10 @@ body {
     font-family: 'Jost', sans-serif;
 }
 
+section {
+    padding: 50px 0;
+}
+
 a {
     text-decoration: none !important;
 }
@@ -1390,6 +1394,103 @@ a:hover {
 #back-to-top a i {
     padding: 5px;
     font-size: 40px;
+}
+
+.find__us__content .find__us__form form input{
+    width: 30%;
+    font-size: 20px;
+    color: #696969;
+    border-radius: 10px;
+    padding: 0px 20px;
+    height: 60px;
+    flex-basis: 48%;
+    background:rgba(147, 107, 232, 0.05);
+    border: 0px solid #777;
+}
+
+.find__us__content .find__us__form form textarea {
+    width: 75%;
+    font-size: 20px;
+    color: #696969;
+    border-radius: 10px;
+    padding: 10px 20px;
+    height: 160px;
+    background:rgba(147, 107, 232, 0.05);
+    border: 0px solid #777;
+ }
+
+ .find__us__content .find__us__form form textarea:focus {
+    outline: none;
+ }
+
+.find__us__content .find__us__form button {
+    padding: 12px 35px;
+    font-size: 18px;
+    line-height: 28px;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: 0.3s ease-in;
+    border-radius: 10px;
+    background-color: #189A46;
+    color: white;
+    align-items: end;
+}
+
+.find__us__content .content_left {
+    width: 70%;
+}
+
+.find__us__content .content_right {
+    width: 28%;
+}
+
+div.line {
+    margin-bottom: 25px;
+}
+
+span.icon {
+    color: #189A46;
+    font-size: 25px;
+}
+
+.find__us__content h6 {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.find__us__content a,
+.find__us__content p {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.cont-left{
+    text-align: center;
+    width: 25%;
+}
+
+.cont-right{
+    width: 75%;
+}
+
+.find__us__content a {
+    color: #000000;
+}
+
+.find__us__content a:hover {
+    color: #189a46;
+}
+
+.address_item {
+    margin-bottom: 30px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 400px;
 }
 
 @keyframes ripple {
